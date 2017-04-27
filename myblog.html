@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background-color: black;
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    /* rgba() is used here instead of HEX color. This method lets us add alpha (transparency) to the mix. */
+    ul {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    /* The max-width is used to make the article responsive (mobile friendly design) */
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    /* The @media is a method that makes the content inside responsive (mobile friendly design) */
+    /* @media sets the condition, in this case the browser should be
+     smaller than 500px- and when that condition is true the CSS
+     inside is activated. */
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+      }
+      li {
+        display: block;
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/dirt_bike1.jpeg" alt="dirtbike" width="600px" height="200px">
+    <h1>Mark's Blog</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">My Work</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>VHS umami pop-up trust fund</h2>
+      <p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan        gentrify Echo Park. Street art swag brunch, next level roof party        Schlitz hella organic keffiyeh selfies. You probably haven't heard       of them polaroid hashtag +1, meggings biodiesel Portland High Life       cray tumblr retro.</p>
+  <button>Like</button></article>
+  <article>
+    <h2>Sartorial synth Echo Park, roof party</h2>
+      <p>chambray you probably haven't heard of them pour-over viral           selvage umami skateboard VHS post-ironic selfies. Wes Anderson           gentrify fanny pack twee, bicycle rights bitters blog keffiyeh           plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four        loko leggings chambray Vice.</p>
+  <button>Like</button></article>
+  <article>
+    <h2>Forage food truck keytar master cleanse</h2>
+      <p>ethical thundercats sustainable locavore quinoa Neutra.               Aesthetic tacky sweater single-origin coffee, bicycle rights             organic lo-fi street art american apparel ennui four loko ethnic         Brooklyn small batch. Forage YOLO polaroid</p>
+  <button>Like</button></article>
+  <script>
+  //Notice how the format is $(element).on(event-type, thing-to-be-done);//
+    $("button").on("click", function() {
+      alert("clicked")
+    });
+  </script>
+</body>
